@@ -1,7 +1,6 @@
 name: Task
 description: A piece of work one developer can pick up and finish alone.
 title: "[AREA] Short imperative title"
-labels: ["type:feature"]
 body:
   - type: markdown
     attributes:
