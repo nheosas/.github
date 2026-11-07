@@ -1,0 +1,37 @@
+name: Bug
+description: Something that worked, or should work, does not.
+title: "[BUG] Short description"
+labels: ["type:bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happens
+      description: Observed behaviour, with exact error text, request ID or screenshot.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should happen
+      description: Link the user story or contract operation if there is one.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      value: |
+        1. 
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Where
+      description: Stage (dev/prod), URL or endpoint, commit or deploy run.
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Logs, suspected cause, workaround. Never paste tokens, passwords or participants' personal data.

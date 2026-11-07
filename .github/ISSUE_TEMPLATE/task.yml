@@ -1,0 +1,53 @@
+name: Task
+description: A piece of work one developer can pick up and finish alone.
+title: "[AREA] Short imperative title"
+labels: ["type:feature"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Write it so someone who missed every meeting can finish it without asking: link the user
+        story, name the files, SSM parameters and contract operations involved, and say how to check it.
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: The problem or user story (link HU-xx / D-xx in nheosas/next360 docs).
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What to build
+      description: The change, concretely. Mention the design choice if one is already made.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Checkboxes that can be verified; each one maps to a test where possible.
+      value: |
+        - [ ] 
+    validations:
+      required: true
+  - type: textarea
+    id: where
+    attributes:
+      label: Where to look
+      description: Files, SSM parameters, contract operations, tables, docs.
+  - type: textarea
+    id: depends
+    attributes:
+      label: Depends on
+      description: "Issues that must land first (#123, org/repo#45), or 'none'."
+      value: none
+  - type: textarea
+    id: out
+    attributes:
+      label: Out of scope
+  - type: textarea
+    id: verify
+    attributes:
+      label: How to verify
+      description: Commands, requests or screens a reviewer uses to confirm it works on dev.
